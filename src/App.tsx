@@ -26,7 +26,7 @@ export const App: React.FC = () => {
 
         setTodos(data);
       } catch (error) {
-        throw new Error('Error fetching todos:');
+        throw new Error('Error fetching todos');
       } finally {
         setIsLoading(false);
       }
@@ -48,7 +48,7 @@ export const App: React.FC = () => {
 
       setSelectedUser(user);
     } catch (error) {
-      throw new Error('Error fetching user:');
+      throw new Error('Error fetching user');
     } finally {
       setIsLoading(false);
     }
